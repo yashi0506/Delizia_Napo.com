@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height:100vh;
+	width: 100%;
+	background-image:url(Images/background.png);
+	background-position: center;
+	background-size: cover;
+	padding-left:5%;
+	padding-right:5%;
+	box-sizing:border-box;
+	position:relative;
+
+}
+.navbar{
+	width: 100%;
+	height: 13 vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+/*--- adjust size of logo delizianapo */
+.logo{
+	width: 500px;
+	cursor: pointer;
+}
+nav ul li{
+	display: inline-grid;
+	list-style:none;
+	margin: 90px 30px;  /*--- first parameter- heignt sepatation, second parameter: adjest distance between home, about is words etc---*/
+}
+
+/*--- chaging colour of home, about us etc ---*/
+ nav ul li a{
+ 	color: #333;
+ 	font-weight: bold;
+ 	font-family: "Lucida Console";
+ 	font-size: 16;
+
+ }
+ /*--- speical effects to navigation bar---*/
+  nav ul li a:hover{
+  	text-decoration: underline;
+ 	text-decoration-color: hotpink; 
+ 	font-size:17;	
+ 	transition:0.8s;
+ }
+ /*---- cont1 used for slideshow---*/
+ .cont1 { 
+ 	width:80vmin;
+ 	height: 500px;
+ 	position:absolute;
+ 	transform: translate(-50%,  -50%);
+ 	top: 550px;
+ 	left: 1000px;
+ 	overflow:hidden;
+ 	border: 5px solid #ffffff;
+ 	border-radius: 8px;
+ 	box-shadow: 30px 25px 30px rgba(30,40,200,0.3);
+
+ }
+ .wrapper{
+ 	width:100%;
+ 	display:flex;
+ 	animation:slide 15s infinite;
+ }
+ img{
+ 	width: 100%;
+ }
+ @keyframes slide{
+ 	0%{
+ 		transform: translateX(0);
+ 	}
+ 	25%{
+ 		transform: translateX(0);
+ 	}
+ 	30%{
+ 		transform: translateX(-100%);
+ 	}
+ 	50%{
+ 		transform: translateX(-100%);
+ 	}
+ 	55%{
+ 		transform: translateX(-200%);
+ 	}
+ 	75%{
+ 		transform: translateX(-200%);
+ 	}
+ 	80%{
+ 		transform: translateX(-300%);
+ 	}
+ 	100%{
+ 		transform: translateX(-300%);
+ 	}
+
+ 	
+ }
+ .container h1{
+ 	font-size:63px;
+ 	font-weight:100;
+ 	margin-top:27px;
+ 	margin-bottom:15px;
+ 	color:#232d60;
+
+ }
